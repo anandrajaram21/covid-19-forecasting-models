@@ -1,6 +1,6 @@
 # COVID-19 Forecasting Models
 
-## Steps to run on a local machine (using Docker)
+## Steps to run on a local machine (using Docker) (recommended)
 
 **Step 1** - Pull the Docker image using the following command
 
@@ -29,5 +29,20 @@ docker start deep-learning
 docker exec -it deep-learning bash
 ```
 
-Please make sure that you have statsmodels version 0.12.0 or greater installed, as the code will not run without it. (The docker image already has the right dependencies, so if you are following the instructions here to set up your environment, you can ignore this warning)
+## Alternative (Using python venv)
 
+**Step 1** - Run the following command to create a python3 venv
+
+```
+python3 -m venv covid_env
+```
+
+**Step 2** - Activate the venv, and run the following command to install all dependencies
+
+```
+pip install -r requirements.txt
+```
+
+**Step 3** - Run the command `jupyter lab` in the terminal to fire up a jupyter lab server.
+
+Please make sure that you have statsmodels version 0.12.0 or greater installed, as the code will not run without it. (The docker image and requirements.txt file already has the right dependencies, so if you are following the instructions here to set up your environment, you can ignore this warning)
