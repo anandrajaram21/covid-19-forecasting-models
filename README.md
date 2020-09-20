@@ -29,5 +29,5 @@ docker start deep-learning
 docker exec -it deep-learning bash
 ```
 
-Please make sure that you have statsmodels version 0.12.0 or greater installed, as the code will not run without it.
+Please make sure that you have statsmodels version 0.12.0 or greater installed, as the code will not run without it. (The docker image already has the right dependencies, so if you are following the instructions here to set up your environment, you can ignore this warning)
 
